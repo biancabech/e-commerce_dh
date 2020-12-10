@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Categoria</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(let produto of produtos) { %>
+        <tr>
+            <td><%= produto.descricao %></td>
+            <td>R$ <%= produto.preco %></td>
+            <td><%= produto.categoria %></td>
+        </tr>
+        <% } %>
+    </tbody>
+</table>
