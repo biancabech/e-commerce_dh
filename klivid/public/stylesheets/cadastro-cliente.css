@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&display=swap');
 
 * {
-  margin: 0;
+  margin: 5px;
   padding: 0;
   list-style: none;
   font-size: 20px;
 }
 
 body {
-  background-color:rgba(211, 211, 211, 0.2);
+  background-color: rgba(211, 211, 211, 0.1);
 }
 
 a {
@@ -78,6 +78,17 @@ form h1 {
   color:black;
   font-family: 'Amantic SC', serif, 'Arial';
 }
+
+.btn-secondary{
+  color: black;
+  background-color: white;
+  border-color: beige;
+}
+
+.btn-secondary:hover {
+  background-color: black
+}
+
 .botao {
   width: 200px;
   height: 50px;
@@ -93,7 +104,7 @@ form h1 {
 }
 
 button:hover {
-  background-color: rgba(75, 0, 130, 0.9);
+  background-color: black;
 }
 
 footer h3 {

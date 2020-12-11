@@ -6,10 +6,16 @@
     <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/cadastro-cliente.css">
     <title>Klivid</title>
+
+    <script>
+      function funcao()
+      {
+         alert("Produto cadastrado com sucesso!");
+      }
+      </script>
+
 </head>
 <body>
-  
-   <%- include('./partials/header') %> 
 
     <section class="alinhar">
         <form>
@@ -38,22 +44,34 @@
               </div>
             </div>
 
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Peças de roupa
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Calça</a>
+                <a class="dropdown-item" href="#">Short</a>
+                <a class="dropdown-item" href="#">Camisa</a>
+                <a class="dropdown-item" href="#">Jaqueta</a>
+              </div>
+            </div><br>
+
             <div class="form-group">
               <div class="col-md-13">
                 <p><b>FRETE ÚNICO:</b> R$30 </p>
               </div>
             </div>
-      
             <div class="botaoAlinhar">
-              <button class="botao">Cadastrar</button>
+              <button type="button" class="botao" onclick="funcao()" value="Exibir Alert">Cadastrar</button>
           </div>
           </form>
     
+         
     </section>
     <script src="/javascripts/jquery-3.5.1.slim.min.js"></script>
     <script src="/javascripts/popper.min.js"></script>
     <script src="/javascripts/bootstrap.min.js"></script>
   
-    <%- include('./partials/footer') %>
 </body>
 </html>
