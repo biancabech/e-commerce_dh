@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
     Category
         .findAll()
         .then(categorias => {
-            res.render('categorias/index', { categorias });
+            res.render('categorias/listar', { categorias });
         })
 });
 
@@ -45,5 +45,16 @@ router.post('/editar/:id', function(req, res, next) {
             res.redirect('/categorias');
         })
 });
+
+router.get('/apagar/:id', function(req, res, next) {
+    const id = req.params.id;
+    Category
+        .destroy({ 
+            where: { id }
+        })
+        .then(() => {
+            res.redirect('/categorias');
+        })
+})
 
 module.exports = router;
