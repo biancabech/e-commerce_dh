@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+   <link rel="stylesheet" href="/stylesheets/login.css">
+   <link rel="icon" type="image" sizes="96x96" href="/images/favicon.png">
+
+<body>
+   <div class="sidenav">
+      <div class="login-main-text">
+         <h1>KLIVID</h1>
+         
+      </div>
+   </div>
+   <div class="main">
+      <div class="col-md-6 col-sm-12">
+         <div class="login-form">
+            <form>
+               <div class="form-group">
+                  <label>E-mail</label>
+                  <input type="text" class="form-control" placeholder="E-mail">
+               </div>
+               <div class="form-group">
+                  <label>Senha</label>
+                  <input type="password" class="form-control" placeholder="Senha">
+               </div>
+               <div class="text-center">
+               <button type="submit" class="btn btn-black">Entrar</button>
+               <button type="submit" class="btn btn-secondary">Cadastrar</button>
+            </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <%- include('./partials/footer') %>
+
+   
+   <script src="/javascripts/jquery.min.js"></script>
+   <script src="/javascripts/bootstrap.bundle.min.js"></script>
+
+</body>
