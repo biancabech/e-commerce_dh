@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Indie+Flower&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+body {
+  background-color:rgba(211, 211, 211, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  width: 60px;
+}
+
+header img {
+  margin-top: 30px;
+  height: 60px;
+}
+
+p {
+  margin-left: 15px;
+}
+
+.header {
+  background: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  font-family: 'sans-serif', 'Arial';
+
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16.1px;
+  }
+
+a:hover {
+  color: rgba(144, 50, 211, 0.9);
+}
+
+/* FIM Header */
+
+form {
+  background-color: white;
+  width: 40%;
+  height: 20%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-family: 'sans-serif', 'Arial';
+  color:black;
+  border: 1px solid gray;
+  border-radius: 15px;
+}
+
+form h1 {
+  color:black;
+  font-family: 'Amantic SC', serif, 'Arial';
+}
+.botao {
+  width: 200px;
+  height: 50px;
+  font-family: 'sans-serif', 'Arial';
+  background-color: black;
+  color: white;
+  letter-spacing: .1rem;
+  border-radius: 5px;
+}
+.botaoAlinhar {
+  display: flex;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: rgba(75, 0, 130, 0.9);
+}
+
+footer h3 {
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  font-family: 'sans-serif', 'Arial';
+}
+
+.alinhar {
+  display: flex;
+  align-items: center;
+}
+
