@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" href="/stylesheets/style.css">
 <p>
     <a href="/categorias/novo">Nova categoria</a>
 </p>
@@ -5,7 +7,7 @@
 <table>
     <thead>
         <tr>
-            <th>Descrição</th>
+            <h1>Descrição</h1>
             <th></th>
         </tr>
     </thead>
@@ -14,8 +16,8 @@
         <tr>
             <td><%= categoria.description %></td>
             <th>
-                <a href="/categorias/editar/<%= categoria.id %>">Editar</a>
-                <a href="/categorias/apagar/<%= categoria.id %>">Apagar</a>
+                <button><a href="/categorias/editar/<%= categoria.id %>">Editar</a></button> &nbsp
+                <button><a href="/categorias/apagar/<%= categoria.id %>">Apagar</a></button><br><br>
             </th>
         </tr>
         <% } %>
