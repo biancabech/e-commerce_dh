@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/cadastro-cliente.css">
+    <title>Klivid</title>
+
+    <script>
+      function funcao()
+      {
+         alert("Produto cadastrado com sucesso!");
+      }
+      </script>
+
+</head>
+<body>
+
+    <section class="alinhar">
+        <form>
+            <h1> Cadastre-se</h1>
+            <div class="form-group">
+              <div class="col-md-13">
+                <input id="Nome" name="Nome" placeholder="Digite o nome do produto" class="form-control input-md" required type="text">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-13">
+                <input type="file" placeholder="Upload versão XL" name="cliente" required="required">
+              </div>
+            </div>
+           
+            <div class="form-group">
+              <div class="col-md-13">
+                <input type="number" class="form-control" id="preco" placeholder="Digite o preço">
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <div class="col-md-13">
+                  <input type="radio" name="P" value="P" checked> P <input type="radio" name="P" value="P" checked> M <input type="radio" name="P" value="P" checked> G 
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Selecione uma roupa
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">Calça</a>
+                <a class="dropdown-item" href="#">Short</a>
+                <a class="dropdown-item" href="#">Camisa</a>
+                <a class="dropdown-item" href="#">Jaqueta</a>
+              </div>
+            </div><br>
+
+            <div class="form-group">
+              <div class="col-md-13">
+                <p><b>FRETE ÚNICO:</b> R$30 </p>
+              </div>
+            </div>
+            <div class="botaoAlinhar">
+              <button type="button" class="botao" onclick="funcao()" value="Exibir Alert">Cadastrar</button>
+          </div>
+          </form>
+    
+         
+    </section>
+    <script src="/javascripts/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+  
+</body>
+</html>
